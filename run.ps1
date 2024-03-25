@@ -1,0 +1,2 @@
+clear
+php main.php

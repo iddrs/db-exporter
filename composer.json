@@ -1,0 +1,21 @@
+{
+    "name": "iddrs/db-exporter",
+    "description": "Exportador de tabelas do PostgreSql para outros formatos.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DbExporter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Everton da Rosa",
+            "email": "everton3x@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.0",
+        "nickbeen/php-cli-progress-bar": "^1.1"
+    }
+}
