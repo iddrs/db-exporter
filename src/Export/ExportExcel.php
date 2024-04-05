@@ -28,7 +28,7 @@ class ExportExcel {
     public function __construct(Connection $con, string $scheme, string $remessa, string $outputFile) {
         printf("Scheme:\t%s".PHP_EOL, $scheme);
         printf("Remessa:\t%s".PHP_EOL, $remessa);
-        printf("Dstino:\t%s".PHP_EOL, $outputFile);
+        printf("Destino:\t%s".PHP_EOL, $outputFile);
         
         $this->con = $con;
         $this->scheme = $scheme;
@@ -70,7 +70,7 @@ class ExportExcel {
                 $this->spreadsheet->getActiveSheet()->setCellValue([$i, 1], $label);
                 $i++;
             }
-            print_r($header);
+//            print_r($header);
             
             printf("Exportando %d linhas".PHP_EOL, sizeof($data));
             $this->spreadsheet->getActiveSheet()->fromArray(source: $data, startCell: 'A2');

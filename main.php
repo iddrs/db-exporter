@@ -2,7 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-$outputDir = 'C:\\Users\\Everton\\Desktop\\Dados Exportados';
+//$outputDir = 'C:\\Users\\Everton\\Desktop\\Dados Exportados';
+$outputDir = 'C:\\Users\\Everton\\OneDrive - independencia.rs.gov.br\\Prefeitura';
 
 $con = new DbExporter\Db\Connection(dsn: 'host=localhost port=5432 dbname=pmidd user=postgres password=lise890');
 
